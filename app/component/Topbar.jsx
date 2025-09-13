@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
-import {Search} from '@mui/icons-material'
+import image from 'next/link'
+import {Person, Search, Chat, Notifications} from '@mui/icons-material'
+import Image from 'next/image'
 
 
 
@@ -13,9 +15,9 @@ export default function Topbar() {
         </Link>
         <div className="w-[30vw] bg-white md:flex px-4 items-center rounded-full">
           <div className="flex h-[40px]">
-            <Search className='text-black'/>
+            <Search className='text-black mr-2'/>
             <input type="text" placeholder='Search for friends, posts and videos' 
-            className='h-full w-full focus:outline-none bg-transparent'/>
+            className='h-full px-2 w-full focus:outline-none text-black bg-transparent'/>
           </div>
         </div>
         <div className='flex gap-6'>
@@ -23,9 +25,26 @@ export default function Topbar() {
             <Link href='/'>
             <h2>HOME</h2>
             </Link>
-            <Link href='/'>
+            <Link href='/profile'>
             <h2>PROFILE</h2>
             </Link>
+            <div className='flex gap-3 items-center text-white'>
+              <div className='relative cursor-pointer'>
+                <Person sx={({fontSize: 30})}/>
+                <span className='text-xs flex items-center justify-center absolute bg-[red] w-[15px] rounded-full -top-[5px] -right-[5px]'>2</span>
+              </div>
+              <div className='relative cursor-pointer'>
+                <Chat/>
+                <span className='text-xs flex items-center justify-center absolute bg-[red] w-[15px] rounded-full -top-[5px] -right-[5px]'>5</span>
+              </div>
+              <div className='relative cursor-pointer'>
+                <Notifications/>
+                <span className='text-xs flex items-center justify-center absolute bg-[red] w-[15px] rounded-full -top-[5px] -right-[5px]'>4</span>
+              </div>
+              <Link href="/profile">
+              <Image src="/assets/team/girl.png" alt="profile logo" width={32} height={32} className='rounded-full object-cover ml-2'/>
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
