@@ -13,8 +13,8 @@ export default function Topbar() {
         <Link href="/">
           <h1>DIO</h1>
         </Link>
-        <div className="w-[30vw] bg-white md:flex px-4 items-center rounded-full">
-          <div className="flex h-[40px]">
+        <div className="w-[30vw]">
+          <div className="flex h-[40px] rounded-full bg-white px-4 items-center justify-center ">
             <Search className='text-black mr-2'/>
             <input type="text" placeholder='Search for friends, posts and videos' 
             className='h-full px-2 w-full focus:outline-none text-black bg-transparent'/>

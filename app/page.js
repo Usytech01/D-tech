@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Topbar/>
-      <main>
+      <main className="flex">
         <Sidebar/>
         <Feed/>
         <Rightbar/>
