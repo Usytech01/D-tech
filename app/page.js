@@ -1,5 +1,5 @@
 import Rightbar from "./component/Rightbar";
-import Sidebar from "./component/Sidebar";
+import Sidebar from "./component/sidebar/Sidebar";
 import Topbar from "./component/Topbar";
 import Feed from "./Feed";
 

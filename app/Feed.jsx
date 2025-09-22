@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Feed() {
   return (
-    <div>This is feed</div>
+    <div className='bg-green-100'>This is feed</div>
   )
 }

@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Rightbar() {
   return (
-    <div>This is Rightbar</div>
+    <div className='bg-yellow-50'>This is Rightbar</div>
   )
 }
