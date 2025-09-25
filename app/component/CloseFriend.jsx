@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function CloseFriend({user}){
     return(
-        <li className='flex items-center gap-3'><Image
+        <li className='flex items-center gap-3 my-4'><Image
         src={user.profilePicture}
         alt='User picture'
         width={32}
