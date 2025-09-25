@@ -51,7 +51,7 @@ export default function Sidebar() {
           Read More
         </button>
         <hr />
-        <ul className='mb-3 mt-6'>
+        <ul className="mb-3 mt-6">
           {Users.map(u=>(
           <CloseFriend key={u.id} user={u}/>
         ))}

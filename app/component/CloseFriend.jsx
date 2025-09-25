@@ -9,7 +9,7 @@ export default function CloseFriend({user}){
         alt='User picture'
         width={32}
         height={32}
-        className='rounded-full cursor-pointer w-[32px] h-[32px]'/>
+        className='rounded-full cursor-pointer w-[32px] h-[32px] mb-3'/>
         <span className='font-semibold'>{user.username}</span>
         </li>
     )
