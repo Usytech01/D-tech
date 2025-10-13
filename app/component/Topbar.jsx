@@ -13,7 +13,7 @@ export default function Topbar() {
         <Link href="/">
           <h1>DIO</h1>
         </Link>
-        <div className="w-[30vw]">
+        <div className="hidden md:block w-[30vw]">
           <div className="flex h-[40px] rounded-full bg-white px-4 items-center justify-center ">
             <Search className='text-black mr-2'/>
             <input type="text" placeholder='Search for friends, posts and videos' 
@@ -28,7 +28,7 @@ export default function Topbar() {
             <Link href='/profile'>
             <h2>PROFILE</h2>
             </Link>
-            <div className='flex gap-3 items-center text-white'>
+            <div className='hidden sm:flex gap-2 sm:gap-4 items-center text-white'>
               <div className='relative cursor-pointer'>
                 <Person sx={({fontSize: 30})}/>
                 <span className='text-xs flex items-center justify-center absolute bg-[red] w-[15px] rounded-full -top-[5px] -right-[5px]'>2</span>
