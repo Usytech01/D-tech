@@ -19,8 +19,11 @@ export default function Share(){
                 <label htmlFor="file" className="flex items-centermr-[15px] cursor-pointer">
                 <PermMedia htmlColor="tomato" className="font-bold mr-3 "/>
                 <span className="text-[i4px] font-bold">Photo or Video</span>
-                <input type="text" />
+                <input style={{display: 'none'}} type="file" id="file" accept=".png, .jpeg, . jpg"/>
                 </label>
+                <button className="border-none p-[7px] text-[12px] rounded-md text-white cursor-pointer mr-[20px] bg-[green]">
+                    Share
+                </button>
             </div>
         </div>
     )
