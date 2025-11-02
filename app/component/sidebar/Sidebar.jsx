@@ -1,5 +1,4 @@
-import { RssFeed, Chat, PlayCircleFilledOutlined, Group, Bookmarks, WorkOutline, HelpOutline, School, Event } from '@mui/icons-material'
-import { PlayCircle } from 'lucide-react'
+import { RssFeed, Chat, PlayCircleFilledOutlined, Group, Bookmarks, WorkOutline, HelpOutline, School, Event } from '@mui/icons-material';
 import React from 'react'
 import "./sidebar.css"
 import {Users} from "../../../dummyData"
@@ -58,5 +57,5 @@ export default function Sidebar() {
         </ul>
       </div>
     </div>
-  )
+  );
 }
