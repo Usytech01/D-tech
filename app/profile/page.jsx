@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Topbar from '../component/Topbar';
 import Sidebar from '../component/sidebar/Sidebar';
-import Rightbar from '../component/Rightbar';
+import Rightbarprofile from '../component/Rightbarprofile';
 import Feed from '../Feed';
 
 
@@ -18,7 +18,7 @@ export default function page() {
         <div className="w-[100vw] md-[75vw]">
           <div className="h-[320px] w-full relative">
             <div className="w-[100vw] md:w-[75] h-[250px] relative">
-              <Image src="/assets/team/avatar.jpg " layout='fill' className='object-fit' alt="pix"/>
+              <Image src="/assets/team/avatar.jpg " layout='fill' className='object-cover' alt="pix"/>
             </div>
             <Image
             className='w-[160px] h-[160px] object-cover rounded-full absolute top-[160px] left-0 right-0 border-4 border-white m-auto'
@@ -40,7 +40,7 @@ export default function page() {
           </div>
 
           <div className="hidden md:block md:w-[30vw]">
-            <Rightbar />
+            <Rightbarprofile />
           </div>
         </div>
       </div>
