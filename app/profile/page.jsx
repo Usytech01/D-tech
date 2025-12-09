@@ -29,7 +29,7 @@ export default function page() {
             />
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h4 className="text-[24px] font-semibold ">Clara Michael</h4>
+            <h4 className="text-[24px] font-semibold ">Kemi Michael</h4>
             <span className="">Hello my friends Welcome {new Date().getFullYear()}</span>
           </div>
         </div>
